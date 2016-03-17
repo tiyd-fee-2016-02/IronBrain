@@ -1,5 +1,56 @@
-products = [
-  {name: 'PowerThirst', description: 'energy, so much energy', price: '$4.20'},
-  {name: 'Nootropics', description: 'delicioius nutrition', price: '$100'},
-  {name: 'BicepPlane', description: 'one strong plane', price: '$150'}
+[
+  {
+    "index": 0,
+    "price": 4.2,
+    "description": "energy, so much energy",
+    "name": "PowerThirst"
+  },
+  {
+    "index": 1,
+    "price": 100,
+    "description": "delicioius nutrition",
+    "name": "Nootropics"
+  },
+  {
+    "index": 2,
+    "price": 150,
+    "description": "one strong plane",
+    "name": "BicepPlane"
+  },
+  {
+    "index": 3,
+    "price": 12000,
+    "description": "your brain is metal now",
+    "name": "IronBrain"
+  },
+  {
+    "index": 4,
+    "price": 26.5,
+    "description": "Bro ipsum dolor sit amet park rat huck twin tip gear jammer hellflip avie.",
+    "name": "Snowboard hammerhead"
+  },
+  {
+    "index": 5,
+    "price": 22.5,
+    "description": "Nose phat backside heli afterbang park stoked wheelie drop.",
+    "name": "360 Explosion"
+  },
+  {
+    "index": 6,
+    "price": 45.5,
+    "description": "Heli dope Snowboard, tele bail dirtbag 180 backside dust on crust bomb twister steed laps taco deck. ",
+    "name": "awesome cookies"
+  },
+  {
+    "index": 7,
+    "price": 52,
+    "description": "Face plant 360 steeps carbon hot dogging.",
+    "name": "taco faceplant"
+  },
+  {
+    "index": 8,
+    "price": 66,
+    "description": "Your mind is an ocean. Fill it with sea life.",
+    "name": "SurfMind"
+  }
 ]
