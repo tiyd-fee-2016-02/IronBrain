@@ -28,8 +28,8 @@ myApp.controller('StoreController', function($scope){
     {name: 'BicepPlane', description: 'one strong plane', price: '$150'}
   ];
 
-  $scope.message = "Click on the hyper link to view the students list."
-
   $scope.username = "Daniel"
+
+  $scope.storeName = "Iron Brain"
 
 });
