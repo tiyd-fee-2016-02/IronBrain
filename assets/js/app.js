@@ -5,7 +5,7 @@ myApp.config(function($routeProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: 'welcome.html',
-      controller: 'StoreController'
+      controller: 'NameController'
     })
     .when('/ViewStore', {
       templateUrl: 'ViewStore.html',
@@ -28,8 +28,11 @@ myApp.controller('StoreController', function($scope){
     {name: 'BicepPlane', description: 'one strong plane', price: '$150'}
   ];
 
-  $scope.username = "Daniel"
-
   $scope.storeName = "Iron Brain"
+
+});
+
+myApp.controller('NameController', function($scope){
+  $scope.username = "Daniel"
 
 });
