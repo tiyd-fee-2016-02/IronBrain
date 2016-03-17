@@ -1,0 +1,5 @@
+products = [
+  {name: 'PowerThirst', description: 'energy, so much energy', price: '$4.20'},
+  {name: 'Nootropics', description: 'delicioius nutrition', price: '$100'},
+  {name: 'BicepPlane', description: 'one strong plane', price: '$150'}
+]
