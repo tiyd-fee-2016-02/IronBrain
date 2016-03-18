@@ -8,21 +8,17 @@
 
   <input type="text" ng-model="name" />
 
-  <!-- <div ng-controller = "StoreController">
-    {{products.items[0].name}}
-    {{products.items[0].price | currency:"USD$"}}
-    {{products.items[0].description}}
-  </div> -->
-
-
 
   <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
-    {{products.items[$index].name}}
-    {{products.items[$index].price | currency:"USD$"}}
-    {{products.items[$index].description}}
+
+    {{products[$index].name}}
+    {{products[$index].price | currency:"$"}}
+    {{products[$index].description}}
 
   </div>
 
 
   <a href="#/home">Back</a>
+
+  {{message}}
 </div>
