@@ -15,7 +15,8 @@ myApp.controller('StoreController', [ '$http', '$scope', function($http, $scope)
 
   $http.get('assets/json/store.json').success(function(data){
     $scope.message = "get was got"
-    $scope.content = data
+    $scope.product = data
+
 
   });
 }]);
