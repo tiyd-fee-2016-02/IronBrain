@@ -25,25 +25,25 @@
 	"image": "bottle4.jpg"
 }, {
 	"name": "SnowBoard",
-	"description": "Bro ipsum dolor sit amet park rat huck twin tip gear jammer hellflip avie.",
+	"description": "frosty, refreshing energy",
 	"price": 26.5,
 	"index": 4,
 	"image": "bottle5.jpg"
 }, {
 	"name": "360Explosion",
-	"description": "Nose phat backside heli afterbang park stoked wheelie drop.",
+	"description": "refactor your energy",
 	"price": 22.5,
 	"index": 5,
 	"image": "bottle6.jpg"
 }, {
-	"name": "awesomeCookies",
-	"description": "Heli dope Snowboard, tele bail dirtbag 180 backside dust on crust bomb twister steed laps taco deck. ",
+	"name": "dopeSnowboard",
+	"description": "think as fast as you shred, brah",
 	"price": 45.5,
 	"index": 6,
 	"image": "bottle7.jpg"
 }, {
 	"name": "tacoFaceplant",
-	"description": "Face plant 360 steeps carbon hot dogging.",
+	"description": "for when you're running on empty",
 	"price": 52,
 	"index": 7,
 	"image": "bottle8.jpg"

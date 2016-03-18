@@ -1,3 +1,21 @@
+#store-wrapper {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .product-card {
   border: solid 1px red;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+.product-name {
+  border: solid 1px blue;
+
+}
+
+.image-card {
+  width: 100px;
 }

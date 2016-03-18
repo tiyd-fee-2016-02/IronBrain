@@ -8,20 +8,22 @@
 
   <input type="text" ng-model="name" />
 
-
+<div id = "store-wrapper">
   <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
     <div class = "product-card">
       <div class="product-name">{{products[$index].name}}</div>
       <div class="product-price">{{products[$index].price | currency:"$"}}</div>
       <div class="product-desc">{{products[$index].description}}</div>
-      <div class="product-img"><img src="assets/images/{{products[$index].image}}"></img></div>
+      <div class="product-img"><img src="assets/images/{{products[$index].image}}" class="image-card"></img></div>
     </div>
   </div>
+</div>
 
 
 
 
   <a href="#/home">Back</a>
+  <a href="#/productdetail">View product detail page</a>
 
   {{message}}
 </div>

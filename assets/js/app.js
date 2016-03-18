@@ -22,6 +22,11 @@ myApp.config(function($routeProvider) {
       controller: 'StoreController'
     })
 
+    .when('/productdetail', {
+      templateUrl: 'details.html',
+      controller: 'DetailController'
+    })
+
     .otherwise({
       redirectTo: '/home'
     });
