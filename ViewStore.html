@@ -21,7 +21,7 @@
 
   <div ng-controller = "StoreController">
     {{product.products[0].name}}
-    {{product.products[0].price}}
+    {{product.products[0].price | currency:"USD$"}}
     {{product.products[0].description}}
   </div>
 
