@@ -1,48 +1,57 @@
 {
 	"items": [{
-		"index": 0,
-		"price": 4.50,
-		"description": "energy, so much energy",
-		"name": "PowerThirst"
-	}, {
-		"index": 1,
-		"price": 100,
-		"description": "delicioius nutrition",
-		"name": "Nootropics"
-	}, {
-		"index": 2,
-		"price": 150,
-		"description": "one strong plane",
-		"name": "BicepPlane"
-	}, {
-		"index": 3,
-		"price": 12000,
-		"description": "your brain is metal now",
-		"name": "IronBrain"
-	}, {
-		"index": 4,
-		"price": 26.5,
-		"description": "Bro ipsum dolor sit amet park rat huck twin tip gear avie.",
-		"name": "Snowboard hammerhead"
-	}, {
-		"index": 5,
-		"price": 22.5,
-		"description": "Nose phat backside heli afterbang park stoked wheelie drop.",
-		"name": "360 Explosion"
-	}, {
-		"index": 6,
-		"price": 45.5,
-		"description": "Heli dope Snowboard, tele bail dirtbag 180 backside dust on crust bomb twister steed laps taco deck. ",
-		"name": "awesome cookies"
-	}, {
-		"index": 7,
-		"price": 52,
-		"description": "Face plant 360 steeps carbon hot dogging.",
-		"name": "taco faceplant"
-	}, {
-		"index": 8,
-		"price": 66,
-		"description": "Your mind is an ocean. Fill it with sea life.",
-		"name": "SurfMind"
-	}]
+	"name": "PowerThirst",
+	"description": "energy, so much energy",
+	"price": 4.2,
+	"index": 0,
+	"image": "bottle1.jpg"
+}, {
+	"name": "Newtropics",
+	"description": "delicioius nutrition",
+	"price": 100,
+	"index": 1,
+	"image": "bottle2.jpg"
+}, {
+	"name": "BicepPlane",
+	"description": "one strong plane",
+	"price": 150,
+	"index": 2,
+	"image": "bottle3.jpg"
+}, {
+	"name": "IronBrain",
+	"description": "your brain is metal now",
+	"price": 12000,
+	"index": 3,
+	"image": "bottle4.jpg"
+}, {
+	"name": "SnowBoard",
+	"description": "Bro ipsum dolor sit amet park rat huck twin tip gear jammer hellflip avie.",
+	"price": 26.5,
+	"index": 4,
+	"image": "bottle5.jpg"
+}, {
+	"name": "360Explosion",
+	"description": "Nose phat backside heli afterbang park stoked wheelie drop.",
+	"price": 22.5,
+	"index": 5,
+	"image": "bottle6.jpg"
+}, {
+	"name": "awesomeCookies",
+	"description": "Heli dope Snowboard, tele bail dirtbag 180 backside dust on crust bomb twister steed laps taco deck. ",
+	"price": 45.5,
+	"index": 6,
+	"image": "bottle7.jpg"
+}, {
+	"name": "tacoFaceplant",
+	"description": "Face plant 360 steeps carbon hot dogging.",
+	"price": 52,
+	"index": 7,
+	"image": "bottle8.jpg"
+}, {
+	"name": "SurfMind",
+	"description": "Your mind is an ocean. Fill it with sea life.",
+	"price": 66,
+	"index": 8,
+	"image": "bottle9.jpg"
+}]
 }
