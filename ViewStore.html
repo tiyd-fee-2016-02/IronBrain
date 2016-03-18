@@ -10,11 +10,11 @@
 
 
   <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
-
-    {{products[$index].name}}
-    {{products[$index].price | currency:"$"}}
-    {{products[$index].description}}
-
+    <div class = "product-card">
+      <div class="product-name">{{products[$index].name}}</div>
+      <div class="product-price">{{products[$index].price | currency:"$"}}</div>
+      <div class="product-desc">{{products[$index].description}}</div>
+    </div>
   </div>
 
 
