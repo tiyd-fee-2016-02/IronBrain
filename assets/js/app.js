@@ -21,7 +21,7 @@ myApp.config(function($routeProvider) {
     })
 
     .when('/details/:id', {
-      templateUrl: 'details.html',
+      templateUrl: 'productDetail.html',
       controller: 'DetailController'
     })
     .otherwise({

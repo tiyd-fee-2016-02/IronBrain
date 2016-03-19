@@ -5,7 +5,7 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
   $http.get('assets/json/store.json').success(function(data){
 
 
-    console.log(typeof($routeParams.id))
+    // console.log(typeof($routeParams.id))
 
 
     for (var i = 0; i < data.items.length; i++){
