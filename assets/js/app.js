@@ -22,8 +22,13 @@ myApp.config(function($routeProvider) {
       controller: 'StoreController'
     })
 
-    .when('/productdetail', {
-      templateUrl: 'details.html',
+    // .when('/productdetail', {
+    //   templateUrl: 'details.html',
+    //   controller: 'DetailController'
+    // })
+
+    .when('/details/:id', {
+      templateUrl: 'productDetail.html',
       controller: 'DetailController'
     })
 

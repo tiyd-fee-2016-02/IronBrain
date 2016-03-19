@@ -3,55 +3,55 @@
 	"name": "PowerThirst",
 	"description": "energy, so much energy",
 	"price": 4.2,
-	"index": 0,
+	"id": 0,
 	"image": "bottle1.jpg"
 }, {
 	"name": "Newtropics",
 	"description": "delicioius nutrition",
 	"price": 100,
-	"index": 1,
+	"id": 1,
 	"image": "bottle2.jpg"
 }, {
 	"name": "BicepPlane",
 	"description": "one strong plane",
 	"price": 150,
-	"index": 2,
+	"id": 2,
 	"image": "bottle3.jpg"
 }, {
 	"name": "IronBrain",
 	"description": "your brain is metal now",
 	"price": 12000,
-	"index": 3,
+	"id": 3,
 	"image": "bottle4.jpg"
 }, {
 	"name": "SnowBoard",
 	"description": "frosty, refreshing energy",
 	"price": 26.5,
-	"index": 4,
+	"id": 4,
 	"image": "bottle5.jpg"
 }, {
 	"name": "360Explosion",
 	"description": "refactor your energy",
 	"price": 22.5,
-	"index": 5,
+	"id": 5,
 	"image": "bottle6.jpg"
 }, {
 	"name": "dopeSnowboard",
 	"description": "think as fast as you shred, brah",
 	"price": 45.5,
-	"index": 6,
+	"id": 6,
 	"image": "bottle7.jpg"
 }, {
 	"name": "tacoFaceplant",
 	"description": "for when you're running on empty",
 	"price": 52,
-	"index": 7,
+	"id": 7,
 	"image": "bottle8.jpg"
 }, {
 	"name": "SurfMind",
 	"description": "Your mind is an ocean. Fill it with sea life.",
 	"price": 66,
-	"index": 8,
+	"id": 8,
 	"image": "bottle9.jpg"
 }]
 }
