@@ -5,14 +5,13 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
   $http.get('assets/json/store.json').success(function(data){
 
 
-    console.log(typeof($routeParams.id))
-
-
     for (var i = 0; i < data.items.length; i++){
       if (data.items[i].id == $routeParams.id){
           $scope.product = data.items[i]
       }
     }
+
+    console.log($scope.product.id);//correctly identifies the product
 
   });
 }]);
