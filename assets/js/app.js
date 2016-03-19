@@ -15,7 +15,7 @@ myApp.config(function($routeProvider) {
       templateUrl: 'hero.html',
       controller: 'StoreController'
     })
-    .when('/cart', {
+    .when('/Cart', {
       templateUrl: 'shoppingCart.html',
       controller: 'StoreController'
     })
@@ -23,6 +23,11 @@ myApp.config(function($routeProvider) {
     .when('/details/:id', {
       templateUrl: 'productDetail.html',
       controller: 'DetailController'
+    })
+
+    .when('/hero', {
+      templateUrl: 'hero.html',
+      controller: 'HeroController'
     })
     .otherwise({
       redirectTo: '/home'

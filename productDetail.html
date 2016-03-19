@@ -1,8 +1,11 @@
 <div>
 
-  {{product.name}}
-  {{product.description}}
-  {{product.price | currency:"$"}}
+  <div>{{product.name}}</div>
+  <div>
+    <img src="/assets/images/{{product.image}}"></img>
+  </div>
+  <div>{{product.description}}</div>
+  <div>{{product.price | currency:"$"}}</div>
 
 </div>
 

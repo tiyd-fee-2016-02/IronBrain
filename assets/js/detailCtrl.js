@@ -11,6 +11,9 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
     for (var i = 0; i < data.items.length; i++){
       if (data.items[i].id == $routeParams.id){
           $scope.product = data.items[i]
+          var productID = i;
+      } else {
+        //do nothing
       }
     }
 
