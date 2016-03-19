@@ -11,24 +11,13 @@ myApp.config(function($routeProvider) {
       templateUrl: 'ViewStore.html',
       controller: 'StoreController'
     })
-    .when('/hero', {
-      templateUrl: 'hero.html',
-      controller: 'StoreController'
-    })
-    .when('/cart', {
-      templateUrl: 'shoppingCart.html',
-      controller: 'StoreController'
-    })
-    .when('/productdetail', {
-      templateUrl: 'details.html',
-
 
     .when('/Cart', {
       templateUrl: 'shoppingCart.html',
       controller: 'StoreController'
     })
-
     .when('/details/:id', {
+      templateUrl: 'productDetail.html',
       controller: 'DetailController'
     })
     .otherwise({
