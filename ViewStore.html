@@ -6,10 +6,11 @@
 
   Search All Products:
 
-  <input type="text" ng-model="name" />
+  <input type="text" ng-model="searchBox" />
 
 <div id = "store-wrapper">
   <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
+    
     <a href="#/details/{{products[$index].id}}" class = "product-card">
       <div class="product-name">{{products[$index].name}}</div>
       <div class="product-price">{{products[$index].price | currency:"$"}}</div>
