@@ -17,7 +17,7 @@ myApp.config(function($routeProvider) {
     //   controller: 'StoreController'
     // })
 
-    .when('/cart', {
+    .when('/Cart', {
       templateUrl: 'shoppingCart.html',
       controller: 'StoreController'
     })
