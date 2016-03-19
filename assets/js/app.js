@@ -20,6 +20,10 @@ myApp.config(function($routeProvider) {
       templateUrl: 'productDetail.html',
       controller: 'DetailController'
     })
+    .when('/hero', {
+      templateUrl: 'hero.html',
+      controller: 'NameController'
+    })
     .otherwise({
       redirectTo: '/home'
     });
