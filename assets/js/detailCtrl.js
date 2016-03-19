@@ -11,11 +11,21 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
     for (var i = 0; i < data.items.length; i++){
       if (data.items[i].id == $routeParams.id){
           $scope.product = data.items[i]
-          var productID = i;
+          
       } else {
         //do nothing
       }
-    }
+
+    };
+
+    $("#add-to-cart").click(function(){
+      console.log(product.id)
+      localStorage.setItem('cart', productID);
+      var productIDstored = localStorage.getItem('cart');
+      console.log(productIDstored)
+    });
 
   });
+
+
 }]);

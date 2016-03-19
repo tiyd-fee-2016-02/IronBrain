@@ -1,4 +1,3 @@
-
 var myApp = angular.module("myApp", ['ngRoute']);
 
 myApp.config(function($routeProvider) {
@@ -11,10 +10,7 @@ myApp.config(function($routeProvider) {
       templateUrl: 'ViewStore.html',
       controller: 'StoreController'
     })
-    .when('/hero', {
-      templateUrl: 'hero.html',
-      controller: 'StoreController'
-    })
+    
     .when('/Cart', {
       templateUrl: 'shoppingCart.html',
       controller: 'StoreController'
