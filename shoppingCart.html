@@ -6,7 +6,9 @@
     <img class = "cart-img" src="assets/images/{{products[contents[$index].id].image}}"></img>
     <div class = "cart-name">{{products[contents[$index].id].name}}</div>
     <div class = "cart-price">{{products[contents[$index].id].price | currency:"$"}}</div>
-    <div class = "cart-quantity"><input value = "{{contents[$index].quantity}}"></input></div>
+    <div class = "cart-quantity">
+      <input class = "quantity" value = "{{contents[$index].quantity}}"></input>
+    </div>
     <div class = "delete-item">Delete</div>
   </div>
 </div>
@@ -14,7 +16,7 @@
 <div class = "update-cart">Update Cart</div>
 
 <div class = "cart-actions">
-  <div class = "cart-total">Total cost: {{cartTotal() | currency:"$"}}</div>
+  <div class = "cart-total">Total cost: {{cartCost | currency:"$"}}</div>
   <div class = "items-number">Total items: {{totalItems()}}</div>
 </div>
 
