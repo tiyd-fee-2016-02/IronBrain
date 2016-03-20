@@ -7,10 +7,12 @@
 		"image": "bottle1.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Best. Product. EVER."
+			"review": "Best. Product. EVER.",
+			"rating": 5
 		}, {
 			"reviewID": 1,
-			"review": "I love this product."
+			"review": "I love this product.",
+			"rating": 4
 		}]
 	}, {
 		"name": "Newtropics",
@@ -20,10 +22,12 @@
 		"image": "bottle2.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "I became like unto a god when taking this product. Time and space became mere illusions which I could warp to my will."
+			"review": "I became like unto a god when taking this product. Time and space became mere illusions which I could warp to my will.",
+			"rating": 5
 		}, {
 			"reviewID": 1,
-			"review": "Ok flavor."
+			"review": "Ok flavor.",
+			"rating": 3
 		}]
 	}, {
 		"name": "BicepPlane",
@@ -33,10 +37,12 @@
 		"image": "bottle3.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Really made me feel like a plane. Would buy again."
+			"review": "Really made me feel like a plane. Would buy again.",
+			"rating": 4
 		}, {
 			"reviewID": 1,
-			"review": "Needs more biceps."
+			"review": "Needs more biceps.",
+			"rating": 2
 		}]
 	}, {
 		"name": "IronBrain",
@@ -46,10 +52,12 @@
 		"image": "bottle4.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "I stopped sleeping while taking this product."
+			"review": "I stopped sleeping while taking this product.",
+			"rating": 3
 		}, {
 			"reviewID": 1,
-			"review": "Had a great time while using this product. Really felt like my brain was heavier."
+			"review": "Had a great time while using this product. Really felt like my brain was heavier.",
+			"rating": 5
 		}]
 	}, {
 		"name": "SnowBoard",
@@ -59,10 +67,12 @@
 		"image": "bottle5.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Could not regulate my body temperature any time I used this. I felt like I was freezing!!"
+			"review": "Could not regulate my body temperature any time I used this. I felt like I was freezing!!",
+			"rating": 0
 		}, {
 			"reviewID": 1,
-			"review": "What I want to know is why was the box it was shipped in so big?? THINK ABOUT THE EARTH!!!"
+			"review": "What I want to know is why was the box it was shipped in so big?? THINK ABOUT THE EARTH!!!",
+			"rating": 2
 		}]
 	}, {
 		"name": "360Explosion",
@@ -72,10 +82,12 @@
 		"image": "bottle6.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Is this supposed to make your heart race? Meh, I'm ok with that."
+			"review": "Is this supposed to make your heart race? Meh, I'm ok with that.",
+			"rating": 4
 		}, {
 			"reviewID": 1,
-			"review": "Needs more flames. I was really disappointed that this contained no actual explosions :("
+			"review": "Needs more flames. I was really disappointed that this contained no actual explosions :(",
+			"rating": 3
 		}]
 	}, {
 		"name": "dopeSnowboard",
@@ -85,10 +97,12 @@
 		"image": "bottle7.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "MUCH better than the regular snowBoard products out there."
+			"review": "MUCH better than the regular snowBoard products out there.",
+			"rating": 5
 		}, {
 			"reviewID": 1,
-			"review": "I don't understand, where is the snow board??"
+			"review": "I don't understand, where is the snow board??",
+			"rating": 2
 		}]
 	}, {
 		"name": "tacoFaceplant",
@@ -98,10 +112,12 @@
 		"image": "bottle8.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Just skip this product and go to Taco Bell. They have tacos there."
+			"review": "Just skip this product and go to Taco Bell. They have tacos there.",
+			"rating": 2
 		}, {
 			"reviewID": 1,
-			"review": "I fell on the ground and it hurt a lot but I took this and my face stopped hurting, actually, I couldn't feel my face at all. Great!!!"
+			"review": "I fell on the ground and it hurt a lot but I took this and my face stopped hurting, actually, I couldn't feel my face at all. Great!!!",
+			"rating": 5
 		}]
 	}, {
 		"name": "SurfMind",
@@ -111,10 +127,12 @@
 		"image": "bottle9.jpg",
 		"reviews": [{
 			"reviewID": 0,
-			"review": "Like being at the beach."
+			"review": "Like being at the beach.",
+			"rating": 5
 		}, {
 			"reviewID": 1,
-			"review": "GET THESE FISH OUT OF MY BRAIN."
+			"review": "GET THESE FISH OUT OF MY BRAIN.",
+			"rating": 2
 		}]
 	}]
 }
