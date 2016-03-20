@@ -30,22 +30,24 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
 
       //identify id of product I'm trying to buy
       var productID = $scope.product.id
-      console.log(productID)
-      //find the item in the cart
+
+      //find an item in the cart
+      var specificCartEntry;
 
       for (var i = 0; i < myCart.length; i++){
         var cartEntry = myCart[i]
         if (cartEntry.id == productID){ //cheating a little here as id is same as index
-          cartEntry.quantity += parseInt($("#quantity").val())
-        } else {
-          //add new object to cart
-          
+          specificCartEntry = cartEntry
         }
       }
 
-
-      cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
-      myCart.push(cartEntry);
+      //if the item is not already in the cart
+      if (specificCartEntry == null){
+        specificCartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
+        myCart.push(specificCartEntry);
+      } else {
+        specificCartEntry.quantity += parseInt($("#quantity").val())
+      }
 
       var toStorage = JSON.stringify(myCart);
       localStorage.setItem('cart', toStorage);
