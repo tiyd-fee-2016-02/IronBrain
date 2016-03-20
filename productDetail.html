@@ -1,11 +1,45 @@
-<div>
+<div class = "detail-wrapper">
+  <div class = "detail-name">{{product.name}}</div>
+  <div class = "full-image">
+    <img src="/assets/images/{{product.image}}"></img>
+  </div>
+  <div class = "detail-description">{{product.description}}</div>
+  <div class = "detail-price">{{product.price | currency:"$"}}</div>
 
-  {{product.name}}
-  {{product.description}}
-  {{product.price | currency:"$"}}
 
-</div>
+  <div class = "purchase-wrapper">
+    <select id="quantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
 
+    <a href="/#Cart" id="add-to-cart">Add to cart</a>
+  </div>
+
+  <div class = "review-block">
+    Reviews:
+    <div class = "review">
+      -{{product.reviews[0].review}}
+    </div>
+    <div class = "review">
+      -{{product.reviews[1].review}}
+    </div>
+  </div>
+
+<<<<<<< HEAD
 <a href="/#Cart" id="add-to-cart">Add to cart</a>
+=======
+  {{reviews}}
+>>>>>>> e14dc8d157f15a5819938615493de7bd3639dc72
 
-<a href="/#ViewStore">Back to store</a>
+
+  <a href="/#ViewStore">Back to store</a>
+</div>

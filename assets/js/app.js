@@ -1,4 +1,3 @@
-
 var myApp = angular.module("myApp", ['ngRoute']);
 
 myApp.config(function($routeProvider) {
@@ -11,22 +10,37 @@ myApp.config(function($routeProvider) {
       templateUrl: 'ViewStore.html',
       controller: 'StoreController'
     })
+
     .when('/Cart', {
       templateUrl: 'shoppingCart.html',
-      controller: 'StoreController'
+      controller: 'CartController'
     })
+
     .when('/create', {
       templateUrl: 'create-product.html',
       controller: 'CreateController'
     })
+
     .when('/details/:id', {
       templateUrl: 'productDetail.html',
       controller: 'DetailController'
     })
+
     .when('/hero', {
       templateUrl: 'hero.html',
-      controller: 'NameController'
+      controller: 'HeroController'
     })
+
+    .when('/Receipt', {
+      templateUrl: 'receipt.html',
+      controller: 'CartController'
+    })
+
+    .when('/EditProfile', {
+      templateUrl: 'EditProfile.html',
+      controller: 'ProfileController'
+    })
+    
     .otherwise({
       redirectTo: '/home'
     });

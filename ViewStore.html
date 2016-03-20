@@ -1,4 +1,4 @@
-<div class="container">
+<div class="store-container">
   <h2>Store Page</h2>
   <h2>{{storeName}}</h2>
 
@@ -12,18 +12,14 @@
   <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
     
     <a href="#/details/{{products[$index].id}}" class = "product-card">
+      <div class="product-img"><img src="assets/images/{{products[$index].image}}" class="image-card"></img></div>
       <div class="product-name">{{products[$index].name}}</div>
       <div class="product-price">{{products[$index].price | currency:"$"}}</div>
-      <div class="product-img"><img src="assets/images/{{products[$index].image}}" class="image-card"></img></div>
     </a>
   </div>
 </div>
 
 
+  <a href="#/home">Back to your home page</a>
 
-
-  <a href="#/home">Back</a>
-
-
-  <!-- {{message}} -->
 </div>
