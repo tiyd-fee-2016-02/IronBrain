@@ -10,10 +10,10 @@ myApp.config(function($routeProvider) {
       templateUrl: 'ViewStore.html',
       controller: 'StoreController'
     })
-    
+
     .when('/Cart', {
       templateUrl: 'shoppingCart.html',
-      controller: 'StoreController'
+      controller: 'CartController'
     })
 
     .when('/details/:id', {
