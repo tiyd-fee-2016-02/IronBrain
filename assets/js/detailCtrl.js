@@ -12,8 +12,9 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
 
     $("#add-to-cart").click(function(){
 
-      var myCart;
+      var myCart;//declare a cart
 
+      //if there is nothing in localStorage by the key of 'cart', make something that is
       if (localStorage.getItem('cart') === null){
         localStorage.setItem('cart', '')
         myCart = [];
@@ -24,17 +25,21 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
         console.log(myCart)
       }
 
+      //adding to quantity of product if product already purchased
+      //making a new entry if that product has not been purchased already
+
       //identify id of product I'm trying to buy
       var productID = $scope.product.id
+      console.log(productID)
       //find the item in the cart
+
       for (var i = 0; i < myCart.length; i++){
         var cartEntry = myCart[i]
         if (cartEntry.id == productID){ //cheating a little here as id is same as index
           cartEntry.quantity += parseInt($("#quantity").val())
         } else {
           //add new object to cart
-          cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
-          myCart.push(cartEntry);
+          
         }
       }
 
