@@ -7,15 +7,16 @@
     <div class = "cart-name">{{products[contents[$index].id].name}}</div>
     <div class = "cart-price">{{products[contents[$index].id].price | currency:"$"}}</div>
     <div class = "cart-quantity">{{contents[$index].quantity}}</div>
+    <div class = "product-total">{{prodTotal()}}</div>
   </div>
 
   <div class = "cart-total">Total cost: {{cartTotal() | currency:"$"}}</div>
   <div class = "items-number">Total items: {{totalItems()}}</div>
 
-<!-- <div ng-repeat="content in contents track by $index" ng-controller = "CartController">
-  {{products[contents[$index].id].price}}
-</div> -->
+
 
 </div>
 
 <a href="#/ViewStore">Back to store</a>
+<br>
+<a href="#/Receipt">Checkout</a>

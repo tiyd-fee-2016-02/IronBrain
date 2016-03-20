@@ -25,6 +25,12 @@ myApp.config(function($routeProvider) {
       templateUrl: 'hero.html',
       controller: 'HeroController'
     })
+
+    .when('/Receipt', {
+      templateUrl: 'receipt.html',
+      controller: 'CartController'
+    })
+
     .otherwise({
       redirectTo: '/home'
     });

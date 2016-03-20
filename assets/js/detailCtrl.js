@@ -35,11 +35,8 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
         }
       }
 
-        //identify id of everything in my cart
-        //compare my new purchase's id to ids of all things already in the cart
-      //if i find it, add my quantity to existing quantity
-      //if I haven't bought it yet, add it to my cart
-      var cartEntry = {id: productID, quantity: 1}
+
+      var cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
       myCart.push(cartEntry);
 
       var toStorage = JSON.stringify(myCart);
