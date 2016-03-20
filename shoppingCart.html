@@ -9,14 +9,18 @@
     <div class = "cart-quantity">{{contents[$index].quantity}}</div>
     <div class = "product-total">{{prodTotal()}}</div>
   </div>
-
-  <div class = "cart-total">Total cost: {{cartTotal() | currency:"$"}}</div>
-  <div class = "items-number">Total items: {{totalItems()}}</div>
-
-
-
 </div>
 
-<a href="#/ViewStore">Back to store</a>
-<br>
-<a href="#/Receipt">Checkout</a>
+<div class = "update-cart">Update Cart</div>
+
+<div class = "cart-actions">
+  <div class = "cart-total">Total cost: {{cartTotal() | currency:"$"}}</div>
+  <div class = "items-number">Total items: {{totalItems()}}</div>
+</div>
+
+<div class = "checkout"><a href="#/Receipt">Checkout</a></div>
+
+<div class = "nav-bar">
+  <a href="#/ViewStore">Back to store</a>
+
+</div>

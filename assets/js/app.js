@@ -31,6 +31,11 @@ myApp.config(function($routeProvider) {
       controller: 'CartController'
     })
 
+    .when('/EditProfile', {
+      templateUrl: 'EditProfile.html',
+      controller: 'ProfileController'
+    })
+
     .otherwise({
       redirectTo: '/home'
     });
