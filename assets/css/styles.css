@@ -1,5 +1,10 @@
 body {
   font-family: sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
 }
 
 #store-wrapper {
@@ -9,15 +14,17 @@ body {
 }
 
 .product-card {
-  border: solid 1px red;
   float: left;
   width: 30%;
   text-align: center;
   text-decoration: none;
+  color: black;
+  margin: 15px;
 }
 
 .product-name {
-  border: solid 1px blue;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .image-card {
@@ -26,8 +33,26 @@ body {
 
 /* Product Detail Page */
 
+.detail-wrapper{
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 .full-image {
-  width: 250px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.detail-name, .detail-description, .detail-price {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.purchase-wrapper {
+  border: solid 1px red;
 }
 
 /* Shopping Cart view */
