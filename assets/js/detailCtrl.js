@@ -3,6 +3,7 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
   $http.get('assets/json/store.json').success(function(data){
     // console.log(typeof($routeParams.id))
 
+    //if the item in cart matches item in inventory, add it to $scope.product
     for (var i = 0; i < data.items.length; i++){
       if (data.items[i].id == $routeParams.id){
           $scope.product = data.items[i]
@@ -29,14 +30,16 @@ myApp.controller('DetailController', ['$http', '$scope', '$routeParams', functio
       for (var i = 0; i < myCart.length; i++){
         var cartEntry = myCart[i]
         if (cartEntry.id == productID){ //cheating a little here as id is same as index
-          cartEntry.quantity += 1
+          cartEntry.quantity += parseInt($("#quantity").val())
         } else {
           //add new object to cart
+          cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
+          myCart.push(cartEntry);
         }
       }
 
 
-      var cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
+      cartEntry = {id: productID, quantity: parseInt($("#quantity").val())}
       myCart.push(cartEntry);
 
       var toStorage = JSON.stringify(myCart);

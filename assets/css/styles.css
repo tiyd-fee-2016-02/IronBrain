@@ -53,6 +53,16 @@ a {
 
 .purchase-wrapper {
   border: solid 1px red;
+  margin-top: 15px;
+}
+
+.review-block {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.review {
+  margin-top: 15px;
 }
 
 /* Shopping Cart view */

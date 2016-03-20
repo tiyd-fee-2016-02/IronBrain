@@ -1,7 +1,7 @@
 
 myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
 
-  $scope.contents = JSON.parse(localStorage.getItem('cart'))
+  $scope.contents = JSON.parse(localStorage.getItem('cart'));
 
   //calc how much cost is, by product
   // $scope.productTotal = function(){
