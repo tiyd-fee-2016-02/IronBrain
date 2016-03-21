@@ -1,5 +1,7 @@
-<div>Here's your receipt. Thank you for your purchases. You're well on your way to becoming a super genius.</div>
+<div class = "thank-you">Thank you for your purchases.</div>
 
-<div>You bought {{totalItems()}} items.</div>
-<div>Total cost was {{cartTotal() | currency:"$"}}</div>
-<div class = "cart-done"><a href = "#/ViewStore">Shop some more!</a></div>
+<div class = "purchase-summary">
+  <div>You bought {{totalItems()}} items.</div>
+  <div>Total cost was {{cartCost  | currency:"$"}}</div>
+  <div class = "cart-done"><a href = "#/ViewStore">Shop some more!</a></div>
+</div>

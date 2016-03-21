@@ -23,6 +23,12 @@ a {
   color: black;
 }
 
+/* Store page */
+
+.store-container {
+  margin-top: 5%;
+}
+
 #store-wrapper {
   width: 80%;
   margin-left: 10%;
@@ -139,7 +145,11 @@ a {
   width: 50px;
 }
 
+/* Receipt Page */
 
+.thank-you, .purchase-summary, .cart-done {
+  margin: 5%;
+}
 
 /*<------------------------hero image landing page*/
 

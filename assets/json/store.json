@@ -90,7 +90,7 @@
 			"rating": 3
 		}]
 	}, {
-		"name": "dopeSnowboard",
+		"name": "DopeSnowboard",
 		"description": "think as fast as you shred, brah",
 		"price": 45.5,
 		"id": 6,
@@ -105,7 +105,7 @@
 			"rating": 2
 		}]
 	}, {
-		"name": "tacoFaceplant",
+		"name": "TacoFaceplant",
 		"description": "for when you're running on empty",
 		"price": 52,
 		"id": 7,

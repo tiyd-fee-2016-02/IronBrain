@@ -33,10 +33,19 @@ myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
     localStorage.clear()
   });
 
-  $(".update-cart").click(function(){
-    for (var i = 0; i < $scope.contents.length; i++){
-
-    }
+  //to delete an item from the cart
+  //this removes items from $scope.contents, but no change to the page
+  $(".delete-item").click(function(){
+    var clickIndex = $(".delete-item").index(this)
+    console.log($scope.contents[clickIndex])
+    $scope.contents.splice(clickIndex, 1)
+    console.log($scope.contents)
   });
+
+  // $(".update-cart").click(function(){
+  //   for (var i = 0; i < $scope.contents.length; i++){
+  //
+  //   }
+  // });
 
 }]);
