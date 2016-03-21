@@ -2,15 +2,15 @@
 
   Search All Products:
 
-  <input type="text" ng-model="name" /><br>
+  <input type="text" ng-model="search" /><br>
 
   <a href="#/home">Back to your home page</a>
 
 <div id = "store-wrapper">
-  <div ng-repeat="product in products track by $index" ng-controller = "StoreController">
+  <div ng-repeat="product in products | filter:search track by $index" ng-controller = "StoreController">
     <a href="#/details/{{products[$index].id}}" class = "product-card">
       <div class="product-img"><img src="assets/images/{{products[$index].image}}" class="image-card"></img></div>
-      <div class="product-name">{{products[$index].name}}</div>
+      <div class="product-name">{{product.name}}</div>
       <div class="product-price">{{products[$index].price | currency:"$"}}</div>
     </a>
   </div>
