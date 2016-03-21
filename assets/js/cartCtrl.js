@@ -16,7 +16,7 @@ myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
   $scope.totalItems = function(){
     var itemTotal = 0;
     for (var i = 0; i < $scope.contents.length; i++){
-      itemTotal += $scope.contents[i].quantity;
+      itemTotal += parseInt($scope.contents[i].quantity);
     }
     return itemTotal;
   };
@@ -29,7 +29,6 @@ myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
 
   //from the receipt page, if you click "Shop some more", remove all items from cart
   $(".cart-done").click(function(){
-    console.log("cart cleared")
     localStorage.clear()
   });
 
@@ -37,15 +36,20 @@ myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
   //this removes items from $scope.contents, but no change to the page
   $(".delete-item").click(function(){
     var clickIndex = $(".delete-item").index(this)
-    console.log($scope.contents[clickIndex])
     $scope.contents.splice(clickIndex, 1)
-    console.log($scope.contents)
   });
 
-  // $(".update-cart").click(function(){
-  //   for (var i = 0; i < $scope.contents.length; i++){
-  //
-  //   }
-  // });
+  $(".update-cart").click(function(){
+    for (var i = 0; i < $scope.contents.length; i++){
+      $scope.contents[i].quantity = $($(".quantity")[i]).val()
+    }
+
+    var toStorage = JSON.stringify($scope.contents);
+    localStorage.setItem('cart', toStorage);
+    $scope.$apply(function(){
+      $scope.cartCost = cartTotal();
+    })
+
+  });
 
 }]);
