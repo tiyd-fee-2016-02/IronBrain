@@ -36,6 +36,11 @@ myApp.config(function($routeProvider) {
       controller: 'ProfileController'
     })
 
+    .when('/NewProduct', {
+      templateUrl: 'newProduct.html',
+      controller: 'StoreController'
+    })
+
     .otherwise({
       redirectTo: '/home'
     });
