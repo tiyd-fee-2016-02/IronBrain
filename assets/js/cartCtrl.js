@@ -41,7 +41,13 @@ myApp.controller('CartController', ['$scope', '$http', function($scope, $http){
 
   $(".update-cart").click(function(){
     for (var i = 0; i < $scope.contents.length; i++){
-      $scope.contents[i].quantity = $($(".quantity")[i]).val()
+      var newQuantity = $($(".quantity")[i]).val()
+      if (newQuantity <= 0){
+        //delete it
+        $scope.contents.splice(i, 1)
+      } else {
+        $scope.contents[i].quantity = newQuantity
+      }
     }
 
     var toStorage = JSON.stringify($scope.contents);
