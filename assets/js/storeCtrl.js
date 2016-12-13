@@ -17,7 +17,7 @@ myApp.controller('StoreController', [ '$http', '$scope', function($http, $scope)
 
 
   //unsure of what the correct address to post to is
-    $.post('http://localhost:3000/1', newProduct).success(function(){
+    $.post('http://localhost:3000/items', newProduct).success(function(){
       console.log("YEP");
     })
     .error(function(){
